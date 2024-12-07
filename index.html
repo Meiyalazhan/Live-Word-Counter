@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="tname">Live Text Analyzer</h1>
+        <div class="ip-container">
+            <textarea class="textInput" id="textInput" placeholder="Paste or Type your text" rows="5"></textarea>
+        </div>
+        <div class="op-container" id="result">
+            <p class="wordCount">Word Count: <span id="wordCount">0</span></p>
+            <p class="charCount">Character Count: <span id="charCount">0</span></p>
+            <p class="senCount">Sentence Count: <span id="senCount">0</span></p>
+            <p class="puncCount">Punctuation Count: <span id="puncCount">0</span></p>
+            <p class="spacCount">Spaces Count: <span id="spacCount">0</span></p>
+            <p class="digiCount">Digits Count: <span id="digiCount">0</span></p>
+            <div class="buttons">
+                <button class="Btn" onclick="clearText()">Clear</button>
+                <button class="Btn" onclick="UpperCase()">UpperCase</button>
+                <button class="Btn" onclick="LowerCase()">LowerCase</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
